@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0099ff;
+}
+
+.first_block{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #f1b403;
+    z-index: 2;
+}
+
+.parrot_here, .intro_text{
+    max-height: 70vh;
+}
+
+.parrot_here{
+    width: 322.92px;
+}
+
+.intro_text{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 322.92px);
+}
+
+.intro_text h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.intro_text h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 1.5rem;
+}
+
+.intro_text ul{
+    font-size: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.svg_content{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    bottom: -15vh;
+    left: 0;
+    z-index: 3;
+}
+
+
+.footer_content{
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 100%);
+}
+
+.second_block{
+    position: relative;
+    width: 100%;
+    /* transform: translate(-50%); */
+    /* background-color: #0099ff; */
+}
